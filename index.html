@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="banner" id="sec">
+    <header>
+    <a href="#" class="logo"> 
+      <img src="\imgs\logo.png" style="width: 150px; "></a>
+    <div id="toggle" onclick="toggle()"></div>
+    </header>
+    <div class="content">
+      <h2>Hello World,<br>I'am <span>DEEPAK MOHANTY</span></h2>
+      <p>I am a web developer with engineering background. <br>
+         I am a student of Electronic and Communication engineering.
+       <br> I love to do photoshop manipulation & art work. 
+      </p>
+        <a href="know more\knme.html">Know more</a>
+    </div>
+    <ul class="sci">
+      <li><a href="#"><img src="imgs\facebook.png" alt=""></a></li>
+      <li><a href="#"><img src="imgs\twitter.png" alt=""></a></li>
+      <li><a href="#"><img src="imgs\linkedin.png" alt=""></a></li>
+    </ul>
+  </section>
+  <div id="navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="nav\about\about.html">About</a></li>
+      <li><a href="nav\services\services.html">Services</a></li>
+      <li><a href="nav\contact\contact.html">Contact</a></li>
+      <li><a href="nav\my cv\cv.html"> my cv</a></li>
+    </ul>
+  </div>
+  <script type="text/javascript">
+  function toggle(){
+    var sec = document.getElementById('sec');
+    var nav = document.getElementById('navigation');
+    sec.classList.toggle('active');
+    nav.classList.toggle('active');
+  }
+  </script>
+</body>
+</html>
